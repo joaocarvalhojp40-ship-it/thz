@@ -52,7 +52,7 @@ margin-top:10px;
 <section class="glass" id="login">
 <h1>thz. home of programming</h1>
 <p>Para acessar TODO o conteúdo, é obrigatório fazer login com Discord.</p>
-<a href="https://SEU_BOT_DISCLOUD/login">Entrar com Discord</a>
+<a href="https://discord.com/oauth2/authorize?client_id=1460821665226297344&response_type=code&redirect_uri=https%3A%2F%2Fvercel.com%2Fjoaocarvalhojp40-ship-its-projects%2Fthz%2F76gfxccProvb2H8WXiwxicHA8xWi&scope=identify+email">Entrar com Discord</a>
 </section>
 
 <!-- APP -->
@@ -81,6 +81,141 @@ sites, aplicativos, jogos, sistemas, bots, automações e inteligências artific
 <p>
 A programação começou com máquinas mecânicas, evoluiu para cartões perfurados,
 Assembly, linguagens de alto nível, até chegar nas linguagens modernas usadas hoje.
+</p>
+</section>
+
+<!-- LÓGICA -->
+<section class="glass">
+<h2>🧠 Lógica de Programação</h2>
+<ul>
+<li>Variáveis</li>
+<li>Condicionais (if / else)</li>
+<li>Laços (for / while)</li>
+<li>Funções</li>
+<li>Entradas e saídas</li>
+</ul>
+
+<code>
+if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
+</code>
+</section>
+
+<!-- ALGORITMOS -->
+<section class="glass">
+<h2>⚙️ Algoritmos</h2>
+<p>
+Algoritmo é uma sequência lógica de passos para resolver um problema.
+</p>
+</section>
+
+<!-- ESTRUTURAS -->
+<section class="glass">
+<h2>📦 Estruturas de Dados</h2>
+<ul>
+<li>Arrays</li>
+<li>Listas</li>
+<li>Pilhas</li>
+<li>Filas</li>
+<li>Árvores</li>
+<li>Grafos</li>
+</ul>
+</section>
+
+<!-- PARADIGMAS -->
+<section class="glass">
+<h2>🧩 Paradigmas de Programação</h2>
+<ul>
+<li>Procedural</li>
+<li>Orientado a Objetos</li>
+<li>Funcional</li>
+<li>Declarativo</li>
+</ul>
+</section>
+
+<!-- LINGUAGENS -->
+<section class="glass">
+<h2>💻 Linguagens de Programação</h2>
+
+<h3>Python</h3>
+<p>Usado em automação, IA, bots, web.</p>
+<p>Salário: R$3.000 → R$15.000 | $800 → $6.000</p>
+<code>
+print("Hello World")
+</code>
+
+<h3>JavaScript</h3>
+<p>Web, front-end, back-end.</p>
+<p>Salário: R$4.000 → R$18.000 | $1.200 → $7.000</p>
+<code>
+console.log("Hello World");
+</code>
+
+<h3>Java</h3>
+<p>Apps, bancos, sistemas.</p>
+<p>Salário: R$5.000 → R$20.000</p>
+</section>
+
+<!-- MERCADO -->
+<section class="glass">
+<h2>💼 Mercado de Trabalho</h2>
+<p>
+Programadores podem trabalhar como CLT, freelancer ou criar seus próprios projetos.
+</p>
+</section>
+
+<!-- TRILHAS -->
+<section class="glass">
+<h2>📚 Trilhas de Estudo</h2>
+<ul>
+<li>Ensino 1 — Lógica (5 min)</li>
+<li>Ensino 2 — Linguagens (5 min)</li>
+<li>Ensino 3 — Projetos (5 min)</li>
+<li>Ensino 4 — Mercado (5 min)</li>
+</ul>
+</section>
+
+<!-- LOJA -->
+<section class="glass">
+<h2>🛒 Planos</h2>
+<p>Free • Coal • Diamond • Platinum</p>
+<p>Planos controlados pelo bot do Discord.</p>
+</section>
+
+<!-- DISCORD -->
+<section class="glass">
+<h2>💬 Discord</h2>
+<p>Servidor oficial com suporte e comunidade.</p>
+</section>
+
+<!-- CONTATO -->
+<section class="glass">
+<h2>📧 Contato</h2>
+<p>Email: suporte@thz.dev</p>
+</section>
+
+</div>
+
+<script>
+const hash = new URLSearchParams(location.hash.replace("#",""));
+const id = hash.get("id");
+
+if(id){
+fetch(``)
+.then(r=>r.json())
+.then(d=>{
+document.getElementById("login").style.display="none";
+document.getElementById("app").classList.remove("hidden");
+document.getElementById("username").innerText=d.username;
+document.getElementById("plano").innerText=d.plano;
+});
+}
+</script>
+
+</body>
+</html>Assembly, linguagens de alto nível, até chegar nas linguagens modernas usadas hoje.
 </p>
 </section>
 
